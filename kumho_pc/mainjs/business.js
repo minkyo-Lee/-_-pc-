@@ -1,0 +1,10 @@
+$(document).ready(function(){
+    $(".business_box>li").click(function(){
+        $(this).css({'height':'450px','background-blend-mode':'multiply'});
+        $(this).find('.sub_box').delay(800).fadeIn('slow');
+        $(this).siblings().css({'height':'150px','background-blend-mode':'normal'});
+        $(this).siblings().find('.sub_box').fadeOut('fast');
+        $(this).find('.busi_btn').removeClass('fa-plus').addClass('fa-minus');
+        $('.busi_btn').not($(this).find('.busi_btn')).removeClass('fa-minus').addClass('fa-plus');
+    });
+});

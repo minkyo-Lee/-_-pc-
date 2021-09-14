@@ -1,0 +1,12 @@
+$(document).ready(function(){
+    $(".recruit_info").hover(
+        function(){
+            $(".recruit_info").addClass("on");
+            $(".recruit_hr").removeClass("on");
+        },
+        function(){
+            $(".recruit_hr").addClass("on");
+            $(".recruit_info").removeClass("on");
+        }
+    );
+});

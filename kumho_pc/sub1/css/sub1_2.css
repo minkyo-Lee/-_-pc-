@@ -1,0 +1,37 @@
+@charset "utf-8";
+
+#container{width: 100%; margin-top: 80px;}
+.art_tit{position: relative;padding:100px 0 80px;box-sizing: border-box;font-size: 40px;}
+.art_tit>.art_tit_deco{position: absolute;bottom: 85px;display: inline-block;width: 10px;height: 10px;border-radius: 5px;background-color: #ef0010;}
+.ethics_inner{width: 1280px;margin: 0 auto;}
+/* visual */
+.visual{width: 100%;height: 400px;text-align: center;background-image: url(../images/sub1_1/visual_bg.jpeg);background-position: center bottom;}
+.visual>.sub_tit{font-family: 'Inter', sans-serif; font-size: 80px;text-shadow: 7px 4px 4px #333; color: #fff;line-height: 400px;}
+/* ethics_rule */
+.ethics_rule{width: 100%;padding-bottom: 100px;}
+.rule_box_wrap{overflow: hidden;}
+.rule_box{float: left;display: block;width: 49%;height: 250px;padding-left: 100px;box-sizing: border-box;}
+.rule_box_lft{border-right: 2px solid #ef0010;padding: 0 100px 0 0;}
+.r_tit{font-size: 24px;line-height: 1.5em;}
+.r_txt{font-size: 18px;line-height: 1.8em;margin-top: 20px;}
+.rule_box_rgt{position: relative;}
+.rule_btn{position: absolute;bottom: 0;right: 10px;}
+
+.rule_pop_box{display: none;position: fixed;z-index: 120;top:0;left:0;width: 100%;height: 100%;background-color:rgba(0,0,0,0.5);}
+.rule_pop_wrap{width: 800px;margin: 0 auto;margin-top: 100px;border: 2px solid #ef0010;border-radius: 0 0 50px 0; background-color: #fff;}
+.rule_pop_inner{position:relative;width: 80%;margin: 0 auto;padding: 30px 0;}
+.rule_pop_inner>.r_p_tit{font-size: 28px;}
+.rule_pop_inner>.pop_close{position: absolute;top:30px;right:0px;border: none;background-color: #fff;}
+.rule_pop_inner>.pop_close>i{font-size: 44px;}
+.rule_pop_inner>.rule_list{margin-top: 15px;}
+.rule_pop_inner>.rule_list>li{}
+.rule_pop_inner>.rule_list>li>.r_l_tit{font-size: 18px;line-height: 3em;}
+.rule_pop_inner>.rule_list>li>.r_l_txt{font-size: 14px;line-height: 1.3em;}
+/* ethics_rule02 */
+.ethics_rule02{width: 100%;padding-bottom: 100px;background-color: #f5f5f5;}
+/* ethics_rule03 */
+.ethics_rule03{width: 100%;padding-bottom: 100px;}
+/* ethics_rule04 */
+.ethics_rule04{width: 100%;padding-bottom: 100px;background-color: #f5f5f5;}
+/* ethics_rule05 */
+.ethics_rule05{width: 100%;padding-bottom: 100px;}

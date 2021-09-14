@@ -1,0 +1,7 @@
+@charset "utf-8";
+
+.visual{background-image: url(../images/sub2_3/housing_bg.jpg);}
+
+.tit_box{padding: 0 0 50px 110px;}
+.tit_box>.theme_tit{display: block; width: 250px;background-color: #b40404; text-align: center; line-height: 60px;color: #fff;font-size: 24px;font-weight: 300;}
+

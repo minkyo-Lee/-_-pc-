@@ -1,0 +1,5 @@
+@charset "utf-8";
+
+.visual{background-image: url(../images/sub2_1/structure_bg.jpg);}
+
+.tab_menu>.tab_menu_inner>.tab_box02>.tab_ct05{display: none;}
