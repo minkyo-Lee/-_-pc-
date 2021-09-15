@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>금호건설모바일</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <link rel="apple-touch-icon-precomposed" size="114*114" href="app_icon.png">
+
+    <link rel="stylesheet" href="../common/css/common.css">
+    <link rel="stylesheet" href="../sub2/css/sub2_1.css">
+    <!-- swiper css -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    
+    <!-- google_icon -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <!-- 필. js -->
+    <script src="../common/js/jquery-1.8.3.min.js"></script>
+    <!-- 필. js호환성 -->
+    <script src="../common/js/jquery-migrate-1.4.1.min.js"></script>
+    <!-- 필. js -->
+    <script src="../common/js/m_gnb.js"></script>
+
+    <!-- swiper js -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/d776dd4fe8.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <div id="wrap">
+        <header id="header">
+            <div class="header_inner">
+                <div class="header_box">
+                    <h1 id="logo"><a href="../index.html"><img src="../common/images/logo.png" alt="로고이미지"></a></h1>
+                    <span class="menu_icon"><a href="javascript:void(0);"><i class="fas fa-bars"></i></a></span>
+                </div>
+                <div class="menu_bg"></div>
+                <nav id="gnb">
+                    <ul class="main_menu">
+                        <li><a href="javascript:void(0)" class="depth">회사소개</a>
+                            <ul class="sub_menu">
+                                <li><a href="../sub1/sub1_1.html">기업정보</a></li>
+                                <li><a href="../sub1/sub1_2.html">경영철학</a></li>
+                                <li><a href="../sub1/sub1_3.html">R&D</a></li>
+                                <li><a href="../sub1/sub1_4.html">찾아오시는길</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="javascript:void(0)" class="depth">사업정보</a>
+                            <ul class="sub_menu">
+                                <li><a href="../sub2/sub2_1.html">건축사업</a></li>
+                                <li><a href="../sub2/sub2_2.html">토목사업</a></li>
+                                <li><a href="../sub2/sub2_3.html">주택사업</a></li>
+                                <li><a href="../sub2/sub2_4.html">환경/플랜트사업</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="javascript:void(0)" class="depth">인재/채용</a>
+                            <ul class="sub_menu">
+                                <li><a href="../sub3/sub3_1.html">채용정보</a></li>
+                                <li><a href="../sub3/sub3_2.html">인사제도</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="javascript:void(0)" class="depth">홍보센터</a>
+                            <ul class="sub_menu">
+                                <li><a href="../sub4/sub4_1.html">NEWS</a></li>
+                                <li><a href="https://webzine.kumhoenc.com/webzine/202106/00_main/main.asp">웹진</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        
+        <section id="top_bar">
+            <h2><a href="../index.html"><i class="fas fa-chevron-left"></i>건축사업</a></h2>  
+        </section>
+
+        <section id="container">
+            <h2 class="hidden">콘텐츠영역</h2>
+
+            <article class="architect_ct">
+                <h3 class="hidden">건축사업설명영역</h3>
+                <div class="architect_box">
+                    <p class="arc_tit">빌딩 개발에서 도시개발로 이어지는 금호건설의 건축사업</p>
+                    <p class="arc_txt">건축물 하나하나가 곧 예술작품이라는 금호건설의 건축 철학을 바탕으로 금호건설이 지은 건축물들을 소개합니다.</p>
+                </div>
+            </article>
+
+            <article class="project_ct">
+                <h3 class="ct_tit"><span> 대표 프로젝트</span></h3>
+                <div class="project_box swiper-container mySwiper">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide">
+                            <figure>
+                                <img src="../sub2/images/architect.jpg" alt="대표프로젝트1">
+                                <figcaption>신공항 관제탑</figcaption>
+                            </figure>
+                        </li>
+                        <li class="swiper-slide">
+                            <figure>
+                                <img src="../sub2/images/architect02.jpg" alt="대표프로젝트2">
+                                <figcaption>화물터미널B</figcaption>
+                            </figure>
+                        </li>
+                        <li class="swiper-slide">
+                            <figure>
+                                <img src="../sub2/images/architect03.jpg" alt="대표프로젝트3">
+                                <figcaption>주택공사 전북사옥</figcaption>
+                            </figure>
+                        </li>
+                    </ul>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </article>        
+        </section>
+
+        <footer id="footer">
+            <div class="footer_inner">
+                <div class="footer_logo">
+                    <a href="index.html"><img src="../common/images/footer_logo.png" alt="푸터로고이미지"></a>
+                </div>
+                <div class="footer_c">
+                    <p>(C) 2012 KUMHO ENGINEERING & CONSTRUCTION</p>
+                    <p>ALL rights reserved</p>
+                </div>
+                <div class="footer_btn">
+                    <a href="#">PC버전</a>
+                </div>
+                <div class="footer_sns">
+                    <ul>
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {});
+      </script>
+</body>
+</html>
