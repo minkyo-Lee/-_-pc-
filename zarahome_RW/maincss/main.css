@@ -1,0 +1,261 @@
+@charset "utf-8";
+
+/* layout */
+#container{display: flex;flex-flow: row wrap;position:relative;z-index:80;width: 100%;}
+.main_visual{width: 100%;}
+.story_box{width: 100%;padding: 100px 0;background-color: #fff;}
+.product_item_box{width: 100%;padding: 100px 0;background-color: #e7e3d9;}
+.care_box{width: 100%;padding: 100px 0;background-color: #fff;}
+.recipe_item_box{width: 100%;padding: 100px 0;background-color: #fff;}
+.store_banner{width: 100%;margin: 300px 0;background-image: url(../images/banner_dark.jpg);background-size: cover;background-attachment: fixed;background-position: center top;}
+.sns_item_box{position: relative;width: 100%;margin-bottom: 200px; height: 700px;background-color: #fff;}
+
+/* common */
+.ct_tit{font-family: 'Bodoni Moda', serif;font-size: 120px;font-weight: 600;}
+.ct_txt{font-family: 'Cafe24Dangdanghae';font-size: 20px;color: #474747; word-break: keep-all;letter-spacing: -0.5px;line-height: 40px;}
+
+/* article.main_visual */
+.main_visual .main_slide{width: 100%;}
+.main_visual .main_slide ul{}
+.main_visual .main_slide ul li{width: 100%;height: 46.875vw;}
+.main_visual .main_slide ul li a{display: block;width: 100%;height: 100%;background-repeat: no-repeat;background-size: cover;}
+.main_visual .main_slide ul li:first-child>a>video{width: 100%;}
+.main_visual .main_slide ul li:nth-child(2)>a{background-image: url(../images/slide01.jpeg);text-indent: -9999px;}
+.main_visual .main_slide ul li:nth-child(3)>a{background-image: url(../images/slide02.jpeg);text-indent: -9999px;}
+.main_visual .main_slide ul li:nth-child(4)>a{background-image: url(../images/slide03.jpeg);text-indent: -9999px;}
+.main_visual .main_slide ul li:nth-child(5)>a{background-image: url(../images/slide04.jpeg);text-indent: -9999px;}
+
+.swiper-pagination-bullet-active-main{background-color: #000 !important;}
+
+/* article.story_box */
+.story_box .story_box_inner{position:relative;width: 1600px;height: 800px;margin: 0 auto;}
+.story_box .story_box_inner .story_tit{position: absolute;z-index:70;top:0;left:50%;}
+.story_box .story_box_inner .story_img{position: absolute;z-index:68;top:100px;left:250px;display: block;width: 600px;height: 450px;background-image: url(../images/story.jpg);background-position: bottom; background-repeat: no-repeat;background-size: cover;}
+.story_box .story_box_inner .story_img>p{margin-top: 25%; font-size: 60px;text-align: center;color: #fff;}
+.story_box .story_box_inner .story_img02{position: absolute;z-index:64;top:220px;right:250px;display: block;width: 550px;height: 480px;}
+.story_box .story_box_inner .story_txt{position: absolute;top: 580px;right:850px;width: 400px;text-align: right;font-size: 20px;}
+.story_box .story_box_inner .m_story_txt{display: none;position: absolute; z-index: 66;top:15.5vw;right:5%;width: 45%;padding: 9vw;box-sizing: border-box;font-size: 2.5vw;line-height: 4.2vw;text-align: center;}
+
+/* article.product_item_box */
+.product_item_box .product_tit{width: 90%;margin-left: 10%;font-size: 80px;}
+.product_item_box .product_txt{width: 90%;margin-left: 10%;}
+.product_item_box .product_slide{width: 90%;margin: 0 auto;}
+.product_item_box .product_slide>ul{display:flex;align-items: center;}
+.product_item_box .product_slide>ul>li{height: auto;display: flex;align-items: center;}
+.product_item_box .product_slide>ul>li>a{display: block;width: 100%;}
+.product_item_box .product_slide>ul>li>a>img{display: block;width: 100%;}
+
+/* article.care_box */
+.care_box .care_box_inner{position:relative;width: 1600px;height: 700px;margin: 0 auto;}
+.care_box .care_box_inner .care_tit{margin-left: 70px;}
+.care_box .care_box_inner .care_txt{width: 30%;margin-left: 70px;word-break:keep-all;}
+.care_box .care_box_inner .t_care_txt{display: none;position:absolute;bottom:0;left:5%;width: 50%;word-break:keep-all;}
+.care_box .care_box_inner .m_care_txt{display: none;}
+.care_box .care_box_inner .m_care_txt>a{display: block;position:absolute;bottom:0;left:5%;width: 70%;}
+.care_box .care_box_inner .care_img{position:absolute;top:100px;right:70px; display: block;width: 80%;height: 600px;background-image: url(../images/care_rug.png);background-size: cover;}
+
+/* article.recipe_item_box */
+.recipe_item_box .recipe_box_inner{position:relative;width: 1600px;height: 750px;margin: 0 auto;}
+.recipe_item_box .recipe_box_inner div{background-repeat: no-repeat;background-size: cover;}
+.recipe_item_box .recipe_box_inner .recipe_tit{position:absolute;top:5%;left: 15%;z-index:60;}
+.recipe_item_box .recipe_box_inner .recipe_txt{font-size: 42px;word-break:keep-all;text-align: center;color: #fff;font-family: 'Cafe24Dangdanghae';}
+.recipe_item_box .recipe_box_inner .recipe_item{position:absolute;top:45%;left: 10%;z-index:58;width: 20%;height: 450px;background-image: url(../images/recipe_ho.jpg);}
+.recipe_item_box .recipe_box_inner .recipe_item>p{padding-top: 50%;}
+.recipe_item_box .recipe_box_inner .recipe_item02{display: none;position:absolute;top:15%;left: 30%;width: 55%;height: 37.5vw;background-image: url(../images/recipe02_ho.jpg);}
+.recipe_item_box .recipe_box_inner .recipe_item02>p{padding-top: 30%;}
+.recipe_item_box .recipe_box_inner .recipe_bg{position:absolute;top:15%;left: 25%;z-index:54;width: 50%;height: 500px;background-image: url(../images/recipe_bg.jpg);}
+.recipe_item_box .recipe_box_inner .recipe_memo{position:absolute;top:0;right: 5%;z-index:56;width: 25%;height: 400px;background-image: url(../images/recipe_memo.png);background-size: contain;}
+.recipe_item_box .recipe_box_inner .recipe_memo>p{padding: 10%;font-size: 32px;word-break:keep-all;font-family: 'Shadows Into Light', cursive;}
+
+/* article.store_banner */
+.store_banner .store_tit>a{display: block;width: 100%;height: 300px;text-align: center;color: #fff;line-height: 300px;}
+
+/* article.sns_item_box */
+.sns_item_box .sns_tit{position: absolute;z-index:40; top:0;right:20%;}
+.sns_item_box .sns_items{position: absolute;z-index:38;top:15%;left: 0;width: 70%;height: 600px;background-image: url(../images/sns_bg.jpg);background-size: cover;background-repeat: no-repeat;background-position: center center;}
+.sns_item_box .sns_items .sns_items_inner{width: 85%;height: 600px;margin-left: 15%;}
+.sns_item_box .sns_items .sns_items_inner .sns_box{display: flex;flex-flow: row wrap;align-content: flex-end;justify-content: space-around;width: 100%;height: 600px;}
+.sns_item_box .sns_items .sns_items_inner .sns_box .sns_item{width: 27%;margin-bottom: 30px;background-color: rgba(0,0,0,0.5);border-radius: 10px;}
+.sns_item_box .sns_items .sns_items_inner .sns_box .sns_item:hover{background-color: rgba(0,0,0,1);transition: all 0.5s;}
+.sns_item_box .sns_items .sns_items_inner .sns_box .sns_item:hover>a{font-weight: bold;transition: all 0.5s;}
+.sns_item_box .sns_items .sns_items_inner .sns_box .sns_item a{display: block;width: 100%;line-height: 60px;color: #fff;font-family: 'Bodoni Moda', serif;text-align: center;}
+
+/* --------------------------- @media_일반PC(1280~1599) ----------------------------- */
+@media screen and (max-width: 1600px) {
+    /* layout */
+    .product_item_box{padding: 80px 0;}
+    .story_box{padding: 80px 0;}
+    .care_box{padding: 80px 0;}
+    .recipe_item_box{padding: 80px 0;}
+    .store_banner{margin: 150px 0;}
+    .sns_item_box{margin-bottom: 150px;height: 650px;}
+
+    /* common */
+    .ct_tit{font-family: 'Bodoni Moda', serif;font-size: 100px;font-weight: 600;}
+    .ct_txt{font-size: 16px;line-height: 30px;}
+
+    /* article.story_box */
+    .story_box .story_box_inner{width: 1280px;height: 700px;}
+    .story_box .story_box_inner .story_tit{top:0;left:50%;}
+    .story_box .story_box_inner .story_img{top:100px;left:200px;width: 500px;height: 400px;}
+    .story_box .story_box_inner .story_img02{top:200px;right:200px;width: 450px;height: 400px;}
+    .story_box .story_box_inner .story_txt{top: 520px;right:680px;width: 400px;font-size: 18px;line-height: 36px;}
+
+  
+
+    /* article.care_box */
+    .care_box .care_box_inner{width: 1280px;height: 700px;margin: 0 auto;}
+    .care_box .care_box_inner .care_tit{margin-left: 50px;}
+    .care_box .care_box_inner .care_txt{width: 35%;margin-left: 50px;}
+    .care_box .care_box_inner .care_img{top:100px;right:50px; display: block;width: 80%;height: 600px;}
+
+    /* article.recipe_item_box */
+    .recipe_item_box .recipe_box_inner{width: 1280px;height: 750px;}
+    .recipe_item_box .recipe_box_inner .recipe_tit{top:5%;left: 10%;}
+    .recipe_item_box .recipe_box_inner .recipe_txt{font-size: 34px;}
+    .recipe_item_box .recipe_box_inner .recipe_item{left: 10%;height: 350px;}
+    .recipe_item_box .recipe_box_inner .recipe_memo>p{font-size: 26px;}
+
+    /* article.sns_item_box */
+    .sns_item_box .sns_tit{right:10%;}
+    .sns_item_box .sns_items{left: 15%;height: 550px;}
+    .sns_item_box .sns_items .sns_items_inner{width: 100%;height: 550px;margin-left: 0;}
+    .sns_item_box .sns_items .sns_items_inner .sns_box{align-content: flex-end;justify-content: space-around;width: 100%;height: 550px;}
+    .sns_item_box .sns_items .sns_items_inner .sns_box .sns_item a{line-height: 50px;}
+
+}
+
+
+
+/* ----------------------------- @media_대형태블릿 -------------------------------- */
+@media screen and (max-width: 1280px) {
+    /* layout */
+    .product_item_box{padding: 50px 0;}
+    .story_box{padding: 50px 0;}
+    .care_box{padding: 50px 0;}
+    .recipe_item_box{padding: 50px 0;}
+    .store_banner{margin: 100px 0;background-attachment: local;background-position: center center;}
+    .sns_item_box{margin-bottom: 0;height: 50vw;}
+
+    /* common */
+    .ct_tit{font-family: 'Bodoni Moda', serif;font-size: 8vw;font-weight: 600;}
+    .ct_txt{font-size: 1.6vw;font-weight: 400;line-height: 3vw;}
+    /* article.main_visual */
+    article.main_visual .main_slide ul li:first-child{display: none;}
+    /* article.story_box */
+    .story_box .story_box_inner{position:relative;width: 100%;height: 65vw;margin: 0;}
+    .story_box .story_box_inner .story_tit{top:0;left:52%;}
+    .story_box .story_box_inner .story_img{top:2.5vw;left:5%;width: 45%;height: 43vw;}
+    .story_box .story_box_inner .story_img>p{margin-top: 30%;font-size: 6vw;}
+    .story_box .story_box_inner .story_img02{top:150px;right:5%;width: 45%;height: 39vw;}
+    .story_box .story_box_inner .story_txt{top: 47vw;right:52%;width: 32vw;font-size: 1.6vw;line-height: 3vw;}
+    /* article.product_item_box */
+    .product_item_box .product_tit{font-size: 6vw;}
+    /* article.care_box */
+    .care_box .care_box_inner{width: 100%;height: 50vw;margin: 0;}
+    .care_box .care_box_inner .care_tit{margin-left: 5%;}
+    .care_box .care_box_inner .care_txt{width: 35%;margin-left: 5%;}
+    .care_box .care_box_inner .care_img{top:10vw;right:5%;width: 70%;height: 39vw;}
+    /* article.recipe_item_box */
+    .recipe_item_box .recipe_box_inner{width: 100%;height: 45vw;margin: 0;}
+    .recipe_item_box .recipe_box_inner .recipe_tit{top:5%;left: 15%;}
+    .recipe_item_box .recipe_box_inner .recipe_txt{font-size: 3vw;}
+    .recipe_item_box .recipe_box_inner .recipe_item{display: none;}
+    .recipe_item_box .recipe_box_inner .recipe_item02{display: block;}
+    .recipe_item_box .recipe_box_inner .recipe_bg{display: none;}
+    .recipe_item_box .recipe_box_inner .recipe_memo{top:5%;left: 10%;width: 25%;height: 29vw;}
+    .recipe_item_box .recipe_box_inner .recipe_memo>p{padding-top: 50%;font-size: 1.6vw;}
+
+    /* article.store_banner */
+    .store_banner .store_tit>a{height: 17vw;line-height: 17vw;}
+
+    /* article.sns_item_box */
+    .sns_item_box .sns_tit{top:5%;left: 5%;color: #fff;}
+    .sns_item_box .sns_items{top:0;left: 0; width: 100%;height: 50vw;}
+    .sns_item_box .sns_items .sns_items_inner{height: 50vw;}
+    .sns_item_box .sns_items .sns_items_inner .sns_box{height: 50vw;}
+    .sns_item_box .sns_items .sns_items_inner .sns_box .sns_item{margin-bottom: 3vw;}
+    .sns_item_box .sns_items .sns_items_inner .sns_box .sns_item a{line-height: 5vw;}
+
+}
+
+/*----------------------- @media_중형태블릿 --------------------------*/
+@media screen and (max-width: 768px) {
+    /* layout */
+    .product_item_box{padding: 25px 0;}
+    .story_box{padding: 25px 0;}
+    .care_box{padding: 25px 0;}
+    .recipe_item_box{padding: 25px 0;}
+    .store_banner{width: 100%;margin: 15vw 0;background-image: url(../images/m_banner_dark.jpg);}
+    .sns_item_box{display: none;}
+
+    /* common */
+    .ct_tit{font-family: 'Bodoni Moda', serif;font-size: 8.5vw;font-weight: 600;}
+    .ct_txt{font-size: 2vw;font-weight: 400;}
+    /* article.main_visual */
+    article.main_visual .main_slide ul li{width: 100%;height: 60vw;}
+    article.main_visual .main_slide ul li:nth-child(2){display: none;}
+    article.main_visual .main_slide ul li a{background-position: center center;}
+    article.main_visual .main_slide ul li:nth-child(3)>a{background-image: url(../images/m_slide01.jpg);text-indent: -9999px;}
+    article.main_visual .main_slide ul li:nth-child(4)>a{background-image: url(../images/m_slide02.jpg);text-indent: -9999px;}
+    article.main_visual .main_slide ul li:nth-child(5)>a{background-image: url(../images/m_slide03.jpg);text-indent: -9999px;}
+    /* article.story_box */
+    .story_box .story_box_inner{height: 65vw;margin: 0;}
+    .story_box .story_box_inner .story_tit{top:0;left:52%;}
+    .story_box .story_box_inner .story_img{top:2.5vw;left:5%;width: 45%;height: 43vw;}
+    .story_box .story_box_inner .story_img>p{margin-top: 30%;font-size: 6vw;}
+    .story_box .story_box_inner .story_img02{top:15.5vw;right:5%;width: 45%;height: 39vw;}
+    .story_box .story_box_inner .story_txt{display: none;}
+    .story_box .story_box_inner .m_story_txt{display: block;}
+
+    /* article.care_box */
+    .care_box .care_box_inner{height: 57vw;}
+    .care_box .care_box_inner .care_tit{position:absolute;top:60%;left:5%;margin-left: 0;}
+    .care_box .care_box_inner .care_txt{display: none;}
+    .care_box .care_box_inner .t_care_txt{display: block;}
+    .care_box .care_box_inner .care_img{top:0;right:5%;width: 50%;height: 57vw;background-image: url(../images/care_candle.png);}
+    /* article.recipe_item_box */
+    .recipe_item_box .recipe_box_inner{height: 45vw;}
+    .recipe_item_box .recipe_box_inner .recipe_tit{top:8%;left: 13%;font-size: 5vw;}
+    .recipe_item_box .recipe_box_inner .recipe_memo>p{padding-top: 40%;}
+    /* article.store_banner */
+    .store_banner .store_tit>a{height: 25vw;line-height: 25vw;}
+}
+
+/*------------------------- @media_모바일 ------------------------------ */
+@media screen and (max-width: 414px) {
+    /* layout */
+    #container{display: flex;position:relative;z-index:80;width: 100%;margin-top: 17vw;}
+    .product_item_box{padding: 13vw 0;}
+    .story_box{padding: 13vw 0;}
+    .care_box{padding: 13vw 0;}
+    .recipe_item_box{display: none;}
+    .store_banner{margin: 13vw 0 0 0;}
+    .sns_item_box{display: none;}
+    /* common */
+    .ct_tit{font-family: 'Bodoni Moda', serif;font-size: 12vw;font-weight: 600;}
+    .ct_txt{font-size: 4vw;font-weight: 400;}
+    /* article.main_visual */
+    article.main_visual .main_slide ul li{width: 100%;height: 85vw;}
+    /* article.product_item_box */
+    .product_item_box .product_tit{width: 100%;margin-left: 0;text-align: center;font-size: 8vw;}
+    .product_item_box .product_txt{display: none;}
+    .product_item_box .product_slide{width: 100%;margin: 0;}
+    /* article.story_box */
+    .story_box .story_box_inner{height: 110vw;margin: 0 auto;}
+    .story_box .story_box_inner .story_tit{top:0;right:10%;writing-mode: vertical-rl;}
+    .story_box .story_box_inner .story_img{top:0;left:5%;width: 70%;height: 55vw;}
+    .story_box .story_box_inner .story_img>p{display: none;}
+    .story_box .story_box_inner .story_img02{top:65vw;right:5%;width: 45%;height: 45vw;}
+    .story_box .story_box_inner .story_txt{display: none;}
+    .story_box .story_box_inner .m_story_txt{display: block;top: 65vw;right:50%;width: 45%;padding: 0 3vw;font-size: 4.5vw;line-height: 6vw;text-align: right;}
+    /* article.care_box */
+    .care_box .care_box_inner{height: 75vw;}
+    .care_box .care_box_inner .care_tit{top:65%;}
+    .care_box .care_box_inner .t_care_txt{display: none;}
+    .care_box .care_box_inner .m_care_txt{display: block;}
+    .care_box .care_box_inner .care_img{top:0;right:5%;width: 60%;height: 75vw;}
+    /* article.store_banner */
+    .store_banner .store_tit>a>span{display: none;}
+}
+

@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>ZARA HOME</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 스마트 폰 / 모바일 = 홈 화면 추가 또는 모바일페이지 실행시 전체화면으로 실행 -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- app icon -->
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="app_icon.png">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="common/css/common.css">
+    <link rel="stylesheet" href="maincss/main.css">
+
+    <!-- 구글 웹 폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <!-- fontawesome cdn -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <!-- 구글 아이콘 -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- slider -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+    
+    <script src="common/js/jquery-1.8.3.min.js"></script>
+    <script src="common/js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="common/js/prefixfree.min.js"></script>
+    <script src="common/js/common.js"></script>
+    <!-- <script src="mainjs/effect.js"></script> -->
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</head>
+<body>
+    
+    <div id="skip_nav">
+        <a class="hidden" href="#gnb">네비게이션 바로가기</a>
+        <a class="hidden" href="#container">컨텐츠 바로가기</a>
+    </div>
+    <div id="wrap">
+        <header id="header">
+            <h2 class="hidden">헤더영역</h2>
+            <div class="header_inner">
+                <h1 id="logo"><a href="index.html"><img src="common/images/logo.svg" alt="로고이미지"></a></h1>
+                <span class="material-icons m_nav_icon"><a href="#">menu</a></span>
+                <div class="menu_bg"></div>
+                <nav id="gnb">
+                    <span class="close_btn"><a href="javascript:void(0);"><i class="fas fa-times"></i></a></span>
+                    <ul class="main_menu">
+                        <li><a href="#" class="depth">STORY</a>
+                            <ul class="sub_menu">
+                                <li><a href="#">Villa Magnan</a></li>
+                                <li><a href="#">Summer Bliss</a></li>
+                                <li><a href="#">The Golden Hour</a></li>
+                                <li><a href="#">Writing From Hydra</a></li>
+                                <li><a href="#">My Dog Is The Best</a></li>
+                                <li><a href="#">More Info.</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" class="depth">PRODUCT</a>
+                            <ul class="sub_menu">
+                                <li><a href="#">Bedroom</a></li>
+                                <li><a href="#">Clothing</a></li>
+                                <li><a href="#">Living Room</a></li>
+                                <li><a href="#">Dining</a></li>
+                                <li><a href="#">Bathroom</a></li>
+                                <li><a href="#">More Info.</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" class="depth">CARE</a>
+                            <ul class="sub_menu">
+                                <li><a href="#">Cashmere</a></li>
+                                <li><a href="#">Wood</a></li>
+                                <li><a href="#">Linen</a></li>
+                                <li><a href="#">Steel</a></li>
+                                <li><a href="#">Glassware</a></li>
+                                <li><a href="#">More Info.</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" class="depth">RECIPE</a>
+                            <ul class="sub_menu">
+                                <li><a href="#">Mini Hamburgers</a></li>
+                                <li><a href="#">Asparagus Tart</a></li>
+                                <li><a href="#">Baked Artichokes</a></li>
+                                <li><a href="#">Hummus</a></li>
+                                <li><a href="#">Cod</a></li>
+                                <li><a href="#">More Info.</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" class="depth">COLLECTION</a></li>
+                    </ul>
+                </nav>
+                <div class="header_icon_box">
+                    <span class="material-icons search_icon"><a href="#">search</a></span>
+                    <span class="material-icons cart_icon"><a href="#">shopping_bag</a></span>
+                </div>
+            </div>
+            <div class="menu_box"></div>
+        </header>
+        <section id="container">
+            <h2 class="hidden">컨텐츠영역</h2>
+            <article class="main_visual">
+                <h3 class="hidden">메인비쥬얼영역</h3>
+                <div class="main_slide swiper-container mySwiper1">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide" data-swiper-autoplay="100000"><a href="#"><video src="video/slide_video.mp4" autoplay loop muted></video></a></li>
+                        <li class="swiper-slide"><a href="#">TheGoldenHour</a></li>
+                        <li class="swiper-slide"><a href="#">ThePoetryOfLight</a></li>
+                        <li class="swiper-slide"><a href="#">ASenseOfSpace</a></li>
+                        <li class="swiper-slide"><a href="#">AthenaCarderone</a></li>
+                    </ul>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </article>
+            <article class="story_box">
+                <div class="story_box_inner">
+                    <h3 class="ct_tit story_tit" data-aos="flip-up" data-aos-duration="1500" data-aos-delay="200">STORY</h3>
+                    <div class="story_img"  data-aos="fade-down" data-aos-duration="2000"  data-aos-delay="800">
+                        <p>VILLA<br>MAGNAN</p>
+                    </div>
+                    <img class="story_img02"  data-aos="fade-up" data-aos-duration="2000"  data-aos-delay="800" src="images/story_s.jpg" alt="villa magnan 서브이미지">
+                    <p class="ct_txt story_txt"  data-aos="fade-right" data-aos-duration="2000" data-aos-delay="800">바다 위, 무성한 풀숲 사이에 비밀의 집같이 숨겨진 빌라 마냥은 프랑스 남서부의 비아리츠에 위치한 아르데코 양식의 저택입니다. 마치 시간이 멈춘 듯 약 80년 동안 방치되어 있던 마법같은 이 곳으로 초대합니다.</p>
+                    <p class="ct_txt m_story_txt">풀숲 사이에 비밀의 집같이 숨겨진 빌라 마냥.<br>시간이 멈춘 듯한 마법같은 이 곳으로 초대합니다.</p>
+                </div>
+            </article>
+            <article class="product_item_box">
+                <h3 class="ct_tit product_tit"  data-aos="flip-up" data-aos-duration="1500" data-aos-delay="200">PRODUCT</h3>
+                <p class="ct_txt product_txt" data-aos="fade-up" data-aos-duration="2000"  data-aos-delay="800">ZARA HOME의 모든 제품이 환경에 미치는 영향을 최소화할 수 있는<br>새로운 공정과 원자재를 사용합니다.</p>
+                <div class="product_slide swiper-container mySwiper2">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide"><a href="#"><img src="images/p1.jpg" alt="p1이미지"></a></li>
+                        <li class="swiper-slide"><a href="#"><img src="images/p2.jpg" alt="p2이미지"></a></li>
+                        <li class="swiper-slide"><a href="#"><img src="images/p3.jpg" alt="p3이미지"></a></li>
+                        <li class="swiper-slide"><a href="#"><img src="images/p4.jpg" alt="p4이미지"></a></li>
+                        <li class="swiper-slide"><a href="#"><img src="images/p5.jpg" alt="p5이미지"></a></li>
+                        <li class="swiper-slide"><a href="#"><img src="images/p6.jpg" alt="p6이미지"></a></li>
+                        <li class="swiper-slide"><a href="#"><img src="images/p7.jpg" alt="p7이미지"></a></li>
+                        <li class="swiper-slide"><a href="#"><img src="images/p8.jpg" alt="p8이미지"></a></li>
+                        <li class="swiper-slide"><a href="#"><img src="images/p9.jpg" alt="p9이미지"></a></li>
+                        <li class="swiper-slide"><a href="#"><img src="images/p10.jpg" alt="p10이미지"></a></li>
+                    </ul>
+                </div>
+            </article>
+            <article class="care_box">
+                <div class="care_box_inner">
+                    <h3 class="ct_tit care_tit"  data-aos="flip-up" data-aos-duration="1500" data-aos-delay="800">CARE</h3>
+                    <p class="ct_txt care_txt"  data-aos="fade-up" data-aos-duration="2000"  data-aos-delay="1200">Rug는 잘 관리하는 방법을 알고있다면 오랫동안 새 상품처럼 지속될 수 있습니다. 직물에 붙을 수 있는 먼지들을 제거하기 위해 정기적으로 청소하는 것이 바람직합니다. Rug Beater를 사용하여 위의 작업을 수행하세요. 가능한 1년에 한 번, 알레르기를 예방할 수 있도록 전문 드라이 클리닝을 하는 것이 좋습니다.</p>
+                    <p class="ct_txt t_care_txt">Candle이 켜져있는 동안 심지가 바르게 서서 왁스가 균일하게 타도록 하는 것이 중요합니다. 최적의 상태를 위해 심지의 길이는 6mm로 유지하는 것이 좋습니다.</p>
+                    <p class="ct_txt m_care_txt"><a href="#">CANDLE 관리법 보러가기 ></a></p>
+                    <div class="care_img"></div>
+                </div>
+            </article>
+            <article class="recipe_item_box">
+                <div class="recipe_box_inner">
+                    <h3 class="ct_tit recipe_tit"  data-aos="flip-up" data-aos-duration="1500" data-aos-delay="1000">RECIPE</h3>
+                    <div class="recipe_item">
+                        <p class="recipe_txt">베이크드 콜리플라워</p>
+                    </div>
+                    <div class="recipe_item02">
+                        <p class="recipe_txt">스트라차텔라를 곁들인 호박</p>
+                    </div>
+                    <div class="recipe_bg"></div>
+                    <div class="recipe_memo">
+                        <p id="writing"></p>      
+                    </div>
+                </div>
+            </article>
+            <article class="store_banner">
+                <h3 class="ct_tit store_tit"><a href="#"><span>FIND </span>STORE</a></h3>
+            </article>
+            <article class="sns_item_box">
+                <h3 class="ct_tit sns_tit"  data-aos="flip-up" data-aos-duration="1500" data-aos-delay="800">JOIN US</h3>
+                <div class="sns_items">
+                    <div class="sns_items_inner">
+                        <ul class="sns_box">
+                            <li class="sns_item"><a href="https://www.instagram.com/zarahome/" class="ct_txt">INSTAGRAM</a></li>
+                            <li class="sns_item"><a href="https://www.facebook.com/zarahome" class="ct_txt">FACEBOOK</a></li>
+                            <li class="sns_item"><a href="https://www.youtube.com/channel/UCrBndgD3vCicJ0nLRoKCCaA" class="ct_txt">YOUTUBE</a></li>
+                            <li class="sns_item"><a href="https://www.pinterest.es/zarahome/" class="ct_txt">PINTEREST</a></li>
+                            <li class="sns_item"><a href="https://twitter.com/zarahome" class="ct_txt">TWITTER</a></li>
+                            <li class="sns_item"><a href="https://pf.kakao.com/_xiLsMC" class="ct_txt">KAKAOTALK</a></li>
+                            <li class="sns_item"><a href="https://open.spotify.com/user/fbune3k41mta54xtdc3d8v7xu?si=FQQ6HDU7RZWT_yqDIVYAmw&nd=1" class="ct_txt">SPOTIFY</a></li>
+                            <li class="sns_item"><a href="https://apps.apple.com/es/app/zarahome-shop-online/id474175190" class="ct_txt">APPLE APP</a></li>
+                            <li class="sns_item"><a href="https://play.google.com/store/apps/details?id=com.inditex.ecommerce.zarahome.android" class="ct_txt">ANDROID APP</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <footer id="footer">
+            <h2 class="hidden">푸터영역</h2>
+            <div class="footer_inner">
+                <div class="footer_top">
+                    <ul class="footer_sns">
+                        <li><a href="https://www.instagram.com/zarahome/"><i class="fab fa-instagram-square"></i></a></li>
+                        <li><a href="https://www.facebook.com/zarahome"><i class="fab fa-facebook-square"></i></a></li>
+                        <li><a href="https://twitter.com/zarahome"><i class="fab fa-twitter-square"></i></a></li>
+                    </ul>
+                    <nav class="footer_nav">
+                        <ul class="footer_menu">
+                            <li>정책
+                                <ul class="footer_sub_menu">
+                                    <li><a href="#">구매 약관</a></li>
+                                    <li><a href="#">개인정보 보호 정책</a></li>
+                                    <li><a href="#">쿠키 정책</a></li>
+                                    <li><a href="#">쿠키 설정</a></li>
+                                </ul>
+                            </li>
+                            <li>회사
+                                <ul class="footer_sub_menu">
+                                    <li><a href="#">채용 정보</a></li>
+                                    <li><a href="#">프레스 센터</a></li>
+                                </ul>
+                            </li>
+                            <li>연락처
+                                <ul class="footer_sub_menu">
+                                    <li><a href="#">연락처</a></li>
+                                    <li><a href="#">GUEST PURCHASE</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                    <form action="." class="footer_subscribe">
+                        <label for="e-mail"><input id="e-mail" type="text" placeholder="이메일 주소를 입력해주세요"></label>
+                        <label for="subscribe"><input id="subscribe" type="submit" value="뉴스레터 구독하기 >"></label>
+                    </form>
+                </div>
+                <div class="footer_bottom">
+                    <!-- footer_logo 배경이미지로 넣기 (모바일에서 로고 이미지 변경) -->
+                    <h3 id="footer_logo"><a href="index.html">푸터로고</a></h3>
+                    <address>
+                        <p>자라홈코리아 유한회사 (Zara Home Korea Ltd.) | 서울시 강남구 영동대로 511 33층 | 사업자 등록 번호:120-88-16920 |</p>
+                        <p>대표자:Lorena Mosquera | 호스팅 서비스 제공업체:ITX Merken B.V. | 통신판매업신고:2018-서울강남-00458</p>
+                    </address>
+                </div>
+            </div>
+        </footer>
+        <span class="top_btn"><a href="#header"><img src="common/images/top_btn.png" alt="탑버튼이미지"></a></span>
+    </div>
+    <script>
+        var swiper = new Swiper('.mySwiper1', {
+          autoheight: false,
+          pagination: {
+            el: ".swiper-pagination",
+            dynamicBullets: true,
+          },
+          autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+          },
+        });
+    </script>
+    <script>
+        var swiper = new Swiper(".mySwiper2", {
+        slidesPerView: 5,
+        spaceBetween: 0,
+        slidesPerGroup: 1,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        autoplay: {
+          delay: 2000,
+          disableOnInteraction: false,
+        },
+        breakpoints: { 
+            320: {slidesPerView: 3 },
+            1281: { slidesPerView: 4 },
+            1601: { slidesPerView: 5 }
+        }
+      });
+      </script>
+      <script>
+        $(function() {
+            AOS.init({
+                once: true, // this one if you want to load animation once else you can remove it
+                disable: function() {
+                    var maxWidth = 769;
+                    return window.innerWidth < maxWidth;
+                }
+            });
+        });
+        </script>
+    <script>
+        
+        let content = "Baked cauliflower with Tandoori spices baby cauliflower, natural yoghurt, lemon, watercress, olives...          ";
+        let text = document.querySelector("#writing");
+        let index = 0;
+        
+        function typing(){
+            text.textContent += content[index++];
+            if(index >= content.length){
+                text.textContent ="";
+                index=0;
+            }
+        }
+        setInterval(typing,100);
+    </script>
+    
+</body>
+</html>
